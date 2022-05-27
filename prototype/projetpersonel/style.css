@@ -1,0 +1,136 @@
+*{box-sizing: border-box;}
+
+.choix{
+
+    height:100%;
+
+    width:50px;
+
+
+
+}
+
+.choice1{
+
+    background-color:red;
+
+}
+
+.choice2{
+
+    background-color:green;
+
+}
+
+.choice3{
+
+    background-color:pink;
+
+}
+
+.menu{
+
+    width:20%;
+
+    height:90%;    
+    
+    position:absolute;
+
+    left:-20%;    
+    
+    transition: left linear 1s;
+
+    top:5%;
+
+}
+
+#hat:checked ~ .choice1{
+
+
+    left:0%;
+
+    z-index: 1;
+}
+
+#glasses:checked ~ .choice2{
+
+
+    left:0%;
+
+    z-index: 1;
+
+}
+
+#hair:checked ~ .choice3{
+
+    left:0%;
+
+    z-index: 1;
+
+}
+
+.button{
+
+   opacity:0%;
+
+}
+
+.button1{
+
+
+    background-color:blue;
+
+    top:5%;
+
+}
+
+.button2{
+
+    background-color:yellow;
+
+    top:15%;
+
+}
+
+.button3{
+
+    background-color:aqua;
+
+    top:25%;
+
+}
+
+.check{
+
+    z-index:2;
+
+    transition: left linear 1s;
+
+    left:0%;
+
+    position:absolute;
+
+    width:3%;
+
+    aspect-ratio: 1/1;
+
+}
+
+#hat:checked ~ .button1{
+
+    left:20%;
+
+}
+
+#glasses:checked ~ .button2{
+
+    left:20%;
+
+}
+
+#hair:checked ~ .button3{
+
+
+    left:20%;
+
+}
